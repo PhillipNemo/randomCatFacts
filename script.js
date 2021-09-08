@@ -11,7 +11,7 @@ fetch('https://codexpression.github.io/catz/catz.json').then(response => {
 })
 .then(data => {
    let allFacts = data.all
-  // localStorage.setItem('catFacts',JSON.stringify(allFacts));
+   localStorage.setItem('catFacts',JSON.stringify(allFacts));
 //    catFacts = [...allFacts]
 })
 .catch(err => {
