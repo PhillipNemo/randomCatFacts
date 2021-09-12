@@ -11,8 +11,8 @@ fetch('https://codexpression.github.io/catz/catz.json').then(response => {
 })
 .then(data => {
    let allFacts = data.all
-   localStorage.setItem('catFacts',JSON.stringify(allFacts));
-//    catFacts = [...allFacts]
+ //  localStorage.setItem('catFacts',JSON.stringify(allFacts));
+   catFacts = [...allFacts]
 })
 .catch(err => {
     console.log('You may be having network issues or it\'s possible the URL you supplied is invalid. Plese do check and reload the page. \n', err);
